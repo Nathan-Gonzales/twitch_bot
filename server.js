@@ -27,8 +27,8 @@ const commands = {
 const client = new tmi.Client({
 	options: { debug: true },
 	identity: {
-		username: TWITCH_BOT_USERNAME,
-		password: TWITCH_OAUTH_TOKEN
+		username: process.env.TWITCH_BOT_USERNAME,
+		password: process.env.TWITCH_OAUTH_TOKEN
 	},
 	channels: [ 'nathanieljenkins' ]
 });
